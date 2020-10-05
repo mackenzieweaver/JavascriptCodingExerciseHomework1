@@ -1,0 +1,31 @@
+﻿#determine-nums, #determine-btns, #factorial-section, #palindrome-section {
+    margin-bottom: 30px;
+}
+
+#determine-btns > .btn {
+    margin-right: 10px;
+}
+
+.determine-num {
+    width: 75px;
+    margin-right: 10px;
+}
+
+#fizz-num, #buzz-num {
+    width: 125px;
+    margin-right: 10px;
+}
+
+#numbers-result, #factorial-result, #palindrome-result {
+    min-height: 30px;
+}
+
+#factorial-number, #user-palindrome {
+    margin-right: 10px;
+}
+
+p {
+    outline: 1px solid gray;
+    padding: 0 15px;
+    background-color: lightgray;
+}
