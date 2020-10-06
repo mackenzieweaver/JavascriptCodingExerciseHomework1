@@ -45,14 +45,34 @@ function Most(num1, num2, num3, num4, num5) {
 
 // Mean
 function Average(num1, num2, num3, num4, num5) {
+    let arr = [];
+    for (let i = 0; i < arguments.length; i++) {
+        if (!isNaN(arguments[i])) {
+            arr.push(arguments[i]);
+        }
+    }
     const e = document.getElementById("numbers-result");
-    e.innerHTML = `<b>${(num1 + num2 + num3 + num4 + num5) / 5}</b>`;
+    if (arr.length == 0) {
+        e.innerHTML = `<b>none</b>`;
+    } else {
+        e.innerHTML = `<b>${arr.reduce((acc, cur) => acc + cur, 0) / arr.length}</b>`;
+    }
 }
 
 // Product
 function Product(num1, num2, num3, num4, num5) {
+    let arr = [];
+    for (let i = 0; i < arguments.length; i++) {
+        if (!isNaN(arguments[i])) {
+            arr.push(arguments[i]);
+        }
+    }
     const e = document.getElementById("numbers-result");
-    e.innerHTML = `<b>${num1 * num2 * num3 * num4 * num5}</b>`;
+    if (arr.length < 2) {
+        e.innerHTML = `<b>none</b>`;
+    } else {
+        e.innerHTML = `<b>${arr.reduce((acc, cur) => acc * cur, 1)}</b>`;
+    }
 }
 
 // Factorial 
