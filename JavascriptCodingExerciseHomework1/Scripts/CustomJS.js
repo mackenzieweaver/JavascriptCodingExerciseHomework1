@@ -29,8 +29,18 @@ function Least(num1, num2, num3, num4, num5) {
 
 // Greatest
 function Most(num1, num2, num3, num4, num5) {
+    let arr = [];
+    for (let i = 0; i < arguments.length; i++) {
+        if (!isNaN(arguments[i])) {
+            arr.push(arguments[i]);
+        }
+    }
     const e = document.getElementById("numbers-result");
-    e.innerHTML = `<b>${Math.max(num1, num2, num3, num4, num5)}</b>`;
+    if (arr.length == 0) {
+        e.innerHTML = `<b>none</b>`;
+    } else {
+        e.innerHTML = `<b>${Math.max(...arr)}</b>`;
+    }
 }
 
 // Mean
