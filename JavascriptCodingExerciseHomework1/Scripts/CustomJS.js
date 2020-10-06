@@ -123,18 +123,22 @@ function ClearCalcBtns() {
     document.getElementById("num3").value = '';
     document.getElementById("num4").value = '';
     document.getElementById("num5").value = '';
+    document.getElementById("num1").focus();
 }
 
 function ClearFactBtn() {
     document.getElementById("factorial-number").value = '';
+    document.getElementById("factorial-number").focus();
 }
 
 function ClearFizzBuzz() {
     document.getElementById("fizz-num").value = '';
     document.getElementById("buzz-num").value = '';
     document.getElementById("upper-limit").value = '';
+    document.getElementById("fizz-num").focus();
 }
 
 function ClearPalindrome() {
     document.getElementById("user-palindrome").value = '';
+    document.getElementById("user-palindrome").focus();
 }
