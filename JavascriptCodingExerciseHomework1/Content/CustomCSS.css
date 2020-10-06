@@ -11,7 +11,7 @@
     margin-right: 10px;
 }
 
-#fizz-num, #buzz-num {
+#fizz-num, #buzz-num, #upper-limit {
     width: 125px;
     margin-right: 10px;
 }
@@ -28,4 +28,5 @@ p {
     outline: 1px solid gray;
     padding: 0 15px;
     background-color: lightgray;
+    width: 300px;
 }

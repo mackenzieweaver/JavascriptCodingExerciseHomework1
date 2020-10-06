@@ -31,8 +31,8 @@ function Factorial(num1) {
 }
 
 // Fizz Buzz
-function FizzBuzz(fizz, buzz) {
-    for (let i = 1; i <= 100; i++) {
+function FizzBuzz(fizz, buzz, upperLimit) {
+    for (let i = 1; i <= upperLimit; i++) {
         if ((i % fizz == 0) && (i % buzz == 0)) {
             console.log('FizzBuzz');
         } else if (i % fizz == 0) {

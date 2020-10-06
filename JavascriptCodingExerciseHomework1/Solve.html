@@ -70,6 +70,7 @@
             </div>
         </div>
 
+        <!-- ================== Calculations ================== -->
         <div id="determine-nums" class="row">
             <input type="number" id="num1" placeholder="num1" class="determine-num" />
             <input type="number" id="num2" placeholder="num2" class="determine-num" />
@@ -86,7 +87,7 @@
                 parseInt(document.getElementById('num4').value),
                 parseInt(document.getElementById('num5').value)
             )">
-                Add
+                Sum
             </button>
 
             <button class="btn btn-danger" onclick="Least(
@@ -106,7 +107,7 @@
                 parseInt(document.getElementById('num4').value),
                 parseInt(document.getElementById('num5').value)
             )">
-                Most
+                Greatest
             </button>
 
             <button class="btn btn-info" onclick="Average(
@@ -116,7 +117,7 @@
                 parseInt(document.getElementById('num4').value),
                 parseInt(document.getElementById('num5').value)
             )">
-                Average
+                Mean
             </button>
 
             <button class="btn btn-dark" onclick="Product(
@@ -134,33 +135,39 @@
         </div>
 
         <hr />
-
+        <!-- ================== Factorial ================== -->
         <div id="factorial-section" class="row">
             <input id="factorial-number" type="number" placeholder="Factorial Number" />
-            <button class="btn btn-outline-dark" onclick="Factorial(parseInt(document.getElementById('factorial-number').value))">Factorial</button>
+            <button class="btn btn-dark" onclick="Factorial(parseInt(document.getElementById('factorial-number').value))">Factorial</button>
         </div>
         <div class="row">
             <p>Result: <span id="factorial-result"></span></p>
         </div>
 
         <hr />
-
+        <!-- ================== Fizz Buzz ================== -->
         <div class="row">
             <input id="fizz-num" type="number" placeholder="Fizz Number" />
             <input id="buzz-num" type="number" placeholder="Buzz Number" />
-            <button class="btn btn-outline-dark" onclick="FizzBuzz(parseInt(document.getElementById('fizz-num').value), parseInt(document.getElementById('buzz-num').value))">Check the console</button>
+            <input id="upper-limit" type="number" placeholder="Upper Limit" />
+            <button class="btn btn-dark" onclick="FizzBuzz(
+                parseInt(document.getElementById('fizz-num').value),
+                parseInt(document.getElementById('buzz-num').value),
+                parseInt(document.getElementById('upper-limit').value)
+            )">Check the console</button>
         </div>
 
         <hr />
-
+        <!-- ================== Palindrome ================== -->
         <div id="palindrome-section" class="row">
             <input id="user-palindrome" type="text" placeholder="Enter a word..." />
-            <button class="btn btn-outline-dark" onclick="Palindrome(document.getElementById('user-palindrome').value)">Check</button>
+            <button class="btn btn-dark" onclick="Palindrome(document.getElementById('user-palindrome').value)">Check</button>
         </div>
         <div class="row">
-            <p>Result: <span id="palindrome-result" ></span></p>
+            <p>Result: <span id="palindrome-result"></span></p>
         </div>
     </div>
+    <!-- ================== End Page Content ================== -->
 
     <!-- Bootstrap core JavaScript -->
     <script src="//code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
