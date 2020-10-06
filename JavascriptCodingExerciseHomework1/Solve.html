@@ -154,7 +154,9 @@
                 parseInt(document.getElementById('fizz-num').value),
                 parseInt(document.getElementById('buzz-num').value),
                 parseInt(document.getElementById('upper-limit').value)
-            )">Check the console</button>
+            )">
+                Check the console
+            </button>
         </div>
 
         <hr />
@@ -163,7 +165,10 @@
             <input id="user-palindrome" type="text" placeholder="Enter a word..." />
             <button class="btn btn-dark" onclick="Palindrome(document.getElementById('user-palindrome').value)">Check</button>
         </div>
-        <div class="row  justify-content-center">
+        <div class="row justify-content-center">
+            <p>Reversed String: <span id="reversed-word"></span></p>
+        </div>        
+        <div class="row justify-content-center">
             <p>Result: <span id="palindrome-result"></span></p>
         </div>
     </div>
