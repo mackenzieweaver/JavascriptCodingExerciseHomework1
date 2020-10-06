@@ -49,7 +49,7 @@ function FizzBuzz(fizz, buzz, upperLimit) {
 function Palindrome(word) {
     const e = document.getElementById("palindrome-result");
     let reverse = word.split('').reverse().join('');
-    if (word == reverse) {
+    if (word.toLowerCase() == reverse.toLowerCase()) {
         e.innerHTML = `<b>Palindrome!</b>`;
     } else {
         e.innerHTML = `<b>Not a palindrome...</b>`;
