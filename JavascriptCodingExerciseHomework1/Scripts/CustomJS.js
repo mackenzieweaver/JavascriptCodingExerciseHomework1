@@ -1,14 +1,17 @@
 ﻿// Sum
 function AddNumbers(num1, num2, num3, num4, num5) {
-    let result = 0;
+    let arr = [];
     for (let i = 0; i < arguments.length; i++) {
-        // if argument is not NaN add it to result
         if (!isNaN(arguments[i])) {
-            result += arguments[i];
-        }        
+            arr.push(arguments[i]);
+        }
     }
     const e = document.getElementById("numbers-result");
-    e.innerHTML = `<b>${result}</b>`;
+    if (arr.length == 0) {
+        e.innerHTML = `<b>none</b>`;
+    } else {
+        e.innerHTML = `<b>${arr.reduce((acc, cur) => acc + cur, 0)}</b>`;
+    }
 }
 
 // Least
