@@ -76,6 +76,7 @@
                 <input type="number" id="num3" placeholder="num3" class="determine-num" min="0" oninput="validity.valid||(value='');"/>
                 <input type="number" id="num4" placeholder="num4" class="determine-num" min="0" oninput="validity.valid||(value='');"/>
                 <input type="number" id="num5" placeholder="num5" class="determine-num" min="0" oninput="validity.valid||(value='');"/>
+                <button id="clear-calc-btns" class="btn btn-danger" onclick="ClearCalcBtns()">Clear</button>
             </div>
             <div id="determine-btns" class="row justify-content-center">
                 <button class="btn btn-dark" onclick="AddNumbers(
@@ -140,7 +141,8 @@
             <p>The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. (i.e. 5! = 5 x 4 x 3 x 2 x 1 = 120).</p>
             <hr class="my-4">
             <div id="factorial-section" class="row  justify-content-center">
-                <input id="factorial-number" type="number" placeholder="Factorial Number" min="0" oninput="validity.valid||(value='');"/>
+                <input id="factorial-number" type="number" placeholder="Factorial Number" min="0" oninput="validity.valid||(value='');" />
+                <button id="clear-fact-btn" class="btn btn-danger" onclick="ClearFactBtn()">Clear</button>
                 <button class="btn btn-dark" onclick="Factorial(parseInt(document.getElementById('factorial-number').value))">Factorial</button>
             </div>
             <div class="row  justify-content-center">
@@ -158,6 +160,7 @@
                 <input id="fizz-num" type="number" placeholder="Fizz Number" min="0" oninput="validity.valid||(value='');" />
                 <input id="buzz-num" type="number" placeholder="Buzz Number" min="0" oninput="validity.valid||(value='');" />
                 <input id="upper-limit" type="number" placeholder="Upper Limit" min="0" oninput="validity.valid||(value='');" />
+                <button id="clear-fizz-buzz" class="btn btn-danger" onclick="ClearFizzBuzz()">Clear</button>
             </div>
             <div class="row  justify-content-center">
                 <button class="btn btn-dark" onclick="FizzBuzz(
@@ -185,6 +188,7 @@
             <hr class="my-4">
             <div id="palindrome-section" class="row  justify-content-center">
                 <input id="user-palindrome" type="text" placeholder="Enter a word..." />
+                <button id="clear-palindrome" class="btn btn-danger" onclick="ClearPalindrome()">Clear</button>
                 <button class="btn btn-dark" onclick="Palindrome(document.getElementById('user-palindrome').value)">Check</button>
             </div>
             <div class="row justify-content-center">

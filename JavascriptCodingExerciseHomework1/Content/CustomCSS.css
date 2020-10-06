@@ -20,7 +20,7 @@
     min-height: 30px;
 }
 
-#factorial-number, #user-palindrome {
+#factorial-number, #user-palindrome, #clear-fact-btn, #clear-palindrome {
     margin-right: 10px;
 }
 

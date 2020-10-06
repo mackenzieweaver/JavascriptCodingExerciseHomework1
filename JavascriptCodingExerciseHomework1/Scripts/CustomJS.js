@@ -115,3 +115,26 @@ function Palindrome(word) {
         e.innerHTML = `<b>Not a palindrome...</b>`;
     }
 }
+
+// Clear Buttons
+function ClearCalcBtns() {
+    document.getElementById("num1").value = '';
+    document.getElementById("num2").value = '';
+    document.getElementById("num3").value = '';
+    document.getElementById("num4").value = '';
+    document.getElementById("num5").value = '';
+}
+
+function ClearFactBtn() {
+    document.getElementById("factorial-number").value = '';
+}
+
+function ClearFizzBuzz() {
+    document.getElementById("fizz-num").value = '';
+    document.getElementById("buzz-num").value = '';
+    document.getElementById("upper-limit").value = '';
+}
+
+function ClearPalindrome() {
+    document.getElementById("user-palindrome").value = '';
+}
