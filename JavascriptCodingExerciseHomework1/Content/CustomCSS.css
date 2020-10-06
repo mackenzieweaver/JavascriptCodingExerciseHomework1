@@ -1,4 +1,4 @@
-﻿#determine-nums, #determine-btns, #factorial-section, #palindrome-section {
+﻿h1, #determine-nums, #determine-btns, #factorial-section, #palindrome-section, #fizz-buzz-section {
     margin-bottom: 30px;
 }
 
@@ -24,7 +24,7 @@
     margin-right: 10px;
 }
 
-p {
+.result-class {
     outline: 1px solid gray;
     padding: 0 15px;
     background-color: lightgray;
